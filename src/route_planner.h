@@ -19,6 +19,7 @@ class RoutePlanner {
     float CalculateHValue(RouteModel::Node const *node);
     std::vector<RouteModel::Node> ConstructFinalPath(RouteModel::Node *);
     RouteModel::Node *NextNode();
+    static bool fValue(const RouteModel::Node* n, const RouteModel::Node*  m);
 
   private:
     // Add private variables or methods declarations here.
